@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MP3 Player</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel='stylesheet' type='text/css' href='css/styles.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 itemprop="name">MP3 Player</h1>
+      </header>
+
+            
+    <div class="row">
+      <div class="col-sm-12">
+          <div id="wave"></div>
+      </div>
+    </div>
+
+
+    <div id="control-bar">
+      <div class="player-control">
+        <div id="previous-button" title="Previous"><i class="glyphicon glyphicon-backward"></i></div>
+        <div id="play-button" title="Play"><i class="glyphicon glyphicon-play"></i></div>
+        <div id="pause-button" title="Pause"><i class="glyphicon glyphicon-pause"></i></div>
+        <div id="stop-button" title="Stop"><i class="glyphicon glyphicon-stop"></i></div>
+        <div id="next-button" title="Next"><i class="glyphicon glyphicon-forward"></i></div>
+        <div id="shuffle-button" title="Shuffle Off"><i class="glyphicon glyphicon-random"></i></div>
+        <div id="repeat-button" title="Repeat Off"><i class="glyphicon glyphicon-refresh"><span>1</span></i></div>
+        <div id="upload-button" title="Upload">
+          <label><i class="glyphicon glyphicon-upload" id ="upload"></i><input id="input" type="file" multiple></label>
+        </div>   
+      </div>
+    </div>
+
+    <!-- <input type="range" id="volume" min="0" max="1" step="0.01"> -->
+
+    <div id="playlist">
+      <div class="list-group" id="track-details">
+        <p id="track-desc">There are no tracks loaded in the player.</p>
+        <p id="track-time"> <span id="current">-</span> / <span id="total">-</span>
+        </p>
+      </div>
+
+    <form id="search">
+      <input class="form-control" id="searchBox" type="search" name="search" placeholder="Search">
+    </form>
+
+        
+    <ul id="list-group"></ul>             
+  </div>
+  
+    <div id="drop-zone">Drag &amp; Drop your files here</div>
+  </div>
+<script src="assets/jquery-2.1.4.min.js"></script>      
+<script src="assets/id3-minimized.js"></script>
+<script src="assets/wavesurfer.min.js"></script>
+<script src="assets/app.js"></script> 
+    </body>
+</html>
