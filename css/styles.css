@@ -147,6 +147,15 @@ body {
   left: 22px;
 }
 
+#previous-button:active,
+#play-button:active,
+#pause-button:active,
+#stop-button:active,
+#next-button:active,
+#upload-button:active {
+  color: #000;
+}
+
 #input {
   display: none;
 }
