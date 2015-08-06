@@ -167,6 +167,10 @@ body {
   font-size: 22px;
 }
 
+#slider {
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
 
 /*---------------------------
     Playlist
