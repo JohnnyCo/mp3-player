@@ -335,6 +335,12 @@ wavesurfer.on('seek', function () {
 
 //---------------------> Player controls
 
+//Volume slider
+
+document.querySelector('#slider').oninput = function () {
+    wavesurfer.setVolume(Number(this.value));
+};
+
 // Pressing the 'next' button
 // Plays next track in playlist, or if shuffle is on random track.
 $('#next-button').on('click', function () {
@@ -680,5 +686,6 @@ $(window).on('resize', function(){
         wavesurfer.drawBuffer();
     }
 });
+
 
 
